@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,19 +48,58 @@
             height: auto;
             border-radius: 8px;
             margin-bottom: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
             float: right;
+            border:5px double #3498db;
+        }
+       
+        fancybox-container {
+            background-color: white !important;
+        }
+        
+        fancybox-content {
+            background-color: white !important;
+        }
+        
+        gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        gallery a {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
         }
     </style>
+   <script>
+    $(document).ready(function() {
+        $('[data-fancybox="gallery"]').fancybox({
+            // Open full-size image on click
+            type: 'image',
+            thumbs: {
+                autoStart: true, // Show thumbnails by default
+            },
+            // You can add more customization options here
+        });
+    });
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Fancybox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </head>
-
 <body>
-
     <header>
         <h1>PANKAJ  &nbsp; JOSHI</h1>
     </header>
 <!--Personal Details-->
     <section>
-        <img src="me2.png" alt="Pankaj Joshi">
+        <img src="img/me2.png" alt="Pankaj Joshi">
         <h2>Personal Details</h2>
         <p><strong>Contact Information:</strong><br>
             Current Address: #402, Mont vert sonnet, Wakad, Pune<br>
@@ -113,8 +151,9 @@ Elder Sister: Miss. Ritika - Soon to be married.<br><br>
     <section>
         <h2>About Me:</h2>
         <p>I am Pankaj Joshi, a passionate software engineer currently thriving in the dynamic IT industry. At 25, I have achieved a commendable position through my dedication and skills. My hobbies include coding, hiking, and exploring new places. Although I call Pune my current home, my roots lie in Naraingarh. As I plan a job switch in the future, with an eye on opportunities in Chandigarh, my close-knit family, including my parents, remains a vital part of my life. I believe in the balance of professional success and strong family bonds.
-        </section>
-        <section>
+    </section>
+    <!--Looking for-->
+    <section>
             <h2>Looking For:</h2>
             <p>In a life partner, I seek understanding and a professional orientation in fields such as nursing, teaching, accounting, or engineering. I am looking for someone who not only comprehends my personal and family needs but also shares a commitment to mutual respect, love, and support. I promise wholehearted support for her endeavors and am open to her pursuing further studies if she desires. While valuing a partner who shares my core values, I am equally supportive of her career aspirations. Together, I believe in fostering a relationship built on understanding and the pursuit of common goals</p>
     </section>
@@ -123,6 +162,22 @@ Elder Sister: Miss. Ritika - Soon to be married.<br><br>
         <h2>Contact Information for Parents</h2>
         <p><strong>Father's Phone:<a href="https://wa.me/+919354299047?text=Hello,">+919354299047</a> <br></strong><br>
     </section>
+      <!--Photo gallery-->
+    <section style="height: 600px;">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <!--image1-->
+            <a href="img/12-2png.png" data-fancybox="gallery" data-caption="Image 1"><img style="height: 465px;" src="img/12-2png.png" alt="Image 1"></a>
+            <!--image2-->
+            <a href="img/7 (2).JPG" data-fancybox="gallery" data-caption="Image 2"><img style="height: 465px;" src="img/7__2.png" alt="Image 2"></a>
+            <!--image3-->
+            <a href="img/1.png" data-fancybox="gallery" data-caption="Image 3"><img style="height: 465px;" src="img/1-2.png" alt="Image 3"></a>
+            <!--image4-->
+            <a href="img/5.JPG" data-fancybox="gallery" data-caption="Image 4"><img style="height:465px;" src="img/5-2.png" alt="Image 4"></a>
+            <!--image5-->
+            <a href="img/13-3.png" data-fancybox="gallery" data-caption="Image 5"><img style="height: 465px;" src="img/13-2.png" alt="Image 5"></a> 
+            
+        </div>
+    </section>
 </body>
 </html>
-<!--shashwat bharaman-->
