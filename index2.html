@@ -1,5 +1,3 @@
-<!--Pankaj Joshi 8570961005
-copyrights reserve by Pankaj Joshi-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +64,35 @@ copyrights reserve by Pankaj Joshi-->
         img.pankaj {
             border:5px double #3498db;
         }        
+        gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        gallery a {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
     </style>
+   <script>
+    $(document).ready(function() {
+        $('[data-fancybox="gallery"]').fancybox({
+            // Open full-size image on click
+            type: 'image',
+            thumbs: {
+                autoStart: true, // Show thumbnails by default
+            },
+            // You can add more customization options here
+        });
+    });
+    </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <!-- Fancybox JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<link rel="icon" src="img/me2.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -103,9 +123,7 @@ copyrights reserve by Pankaj Joshi-->
         <p><strong>Educational:</strong><br>
             Bachelor of Technology in Computer Science & Engg. <br>
             Diploma in Computer Engg.<br>
-            </p>
-        <p><strong>Anual Income:</strong><br>
-            I am financially independent with a stable income, earning approximately in the range of 7-10 lakh annually, while my father also contributes significantly to our family's financial well-being, with a similar approximate income range per annum.
+            Senior Secondary in Science from HBSE <br>
             </p>
     </section>
     <!--Family Background-->
@@ -133,16 +151,12 @@ Elder Sister: Miss. Ritika - Married.<br><br>
     <!--About me-->
     <section>
         <h2>About Me:</h2>
-        <p>I'm Pankaj Joshi, and I'm passionate about being a software engineer. At 25, I find joy in continuously learning and growing in my field. Outside of work, I indulge in coding, cooking, and exploring the great outdoors through hiking. Pune holds a special place in my heart, not just as my current home, but as the city where I've forged meaningful relationships and cherished memories. <br>
-
-            Family is the cornerstone of my life, and I'm fortunate to share a close bond with my loved ones. Their support and companionship have shaped me into the person I am today. I approach life with a mature outlook, valuing honesty, integrity, and empathy in all my interactions.<br>
-            
-            As I embark on this new chapter, I envision building a relationship founded on trust, respect, and mutual understanding. I believe in facing life's challenges together, celebrating successes, and weathering storms as a team. I'm excited to meet someone who shares my values and dreams, someone with whom I can create a life filled with love, laughter, and shared adventures.</p>
+        <p>I am Pankaj Joshi, a passionate software engineer currently thriving in the dynamic IT industry. At 25, I have achieved a commendable position through my dedication and skills. My hobbies include coding, hiking, and exploring new places. Although I call Pune my current home, my roots lie in Naraingarh. As I plan a job switch in the future, with an eye on opportunities in Chandigarh, my close-knit family, including my parents, remains a vital part of my life. I believe in the balance of professional success and strong family bonds.
     </section>
     <!--Looking for-->
     <section>
             <h2>Looking For:</h2>
-            <p>I am in search of a life partner who not only possesses a professional orientation, ideally in fields such as medical, accounting, or engineering, but also shares a deep understanding of my personal and family needs. Mutual respect, love, and support are fundamental to me, and I hope to find someone who values these qualities as much as I do. I am committed to providing wholehearted support for her endeavors and am open to her pursuing further studies if she desires. Additionally, I believe in fostering a partnership where we not only share core values but also enjoy common interests and hobbies, and communicate openly and honestly. Together, I envision building a life centered around mutual understanding and the pursuit of shared goals.</p>
+            <p>In a life partner, I seek understanding and a professional orientation in fields such as nursing, teaching, accounting, or engineering. I am looking for someone who not only comprehends my personal and family needs but also shares a commitment to mutual respect, love, and support. I promise wholehearted support for her endeavors and am open to her pursuing further studies if she desires. While valuing a partner who shares my core values, I am equally supportive of her career aspirations. Together, I believe in fostering a relationship built on understanding and the pursuit of common goals</p>
     </section>
     <!--Contact Information for Parents-->
     <section>
@@ -150,9 +164,22 @@ Elder Sister: Miss. Ritika - Married.<br><br>
         <p><strong>Father's Phone:<a href="https://wa.me/+919354299047?text=Hello,">+919354299047</a> <br></strong><br>
     </section>
       <!--Photo gallery-->
-    <section style="height: 100px;">
+    <section style="height: 550px;">
         <h2>Photo Gallery</h2>
-        <a href="https://forms.gle/TYBWqnKRqJUy8RiG6"> Click here </a>
+        <div class="gallery">
+            <!--image1-->
+            <a href="img/12-2png.png" data-fancybox="gallery" data-caption="Image 1"><img class = "pankaj" style="height: 130px;" src="img/12-2png.png" alt="Image 1"></a>
+            <!--image2-->
+            <a href="img/7 (2).JPG" data-fancybox="gallery" data-caption="Image 2"><img class = "pankaj" style="height: 130px;" src="img/7__2.png" alt="Image 2"></a>
+            <!--image3-->
+            <a href="img/1.png" data-fancybox="gallery" data-caption="Image 3"><img class = "pankaj" style="height: 130px;" src="img/1-2.png" alt="Image 3"></a>
+            <!--image4-->
+            <a href="img/5.JPG" data-fancybox="gallery" data-caption="Image 4"><img class = "pankaj" style="height:130px;" src="img/5-2.png" alt="Image 4"></a>
+            <!--image5-->
+            <a href="img/13-3.png" data-fancybox="gallery" data-caption="Image 5"><img class = "pankaj" style="height: 130px;" src="img/13-2.png" alt="Image 5"></a> 
+            <!--image6-->
+            <a href="img/2 (1).png" data-fancybox="gallery" data-caption="Image 5"><img class = "pankaj" style="height: 130px;" src="img/2.png" alt="Image 5"></a> 
+        </div>
     </section>
 </body>
 </html>
